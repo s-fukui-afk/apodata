@@ -8,14 +8,6 @@ import httplib2
 from datetime import datetime, timedelta
 import pytz, time, random, socket, re
 
-from apodata_pipeline.config_apodata import (
-    # 既存
-    TARGET_ID, TARGET_SHEET, MEIBO_SHEET,
-    COLUMNS, BATCH_SIZE_COPY_INIT, BATCH_SIZE_COPY_MIN, WRITE_START,
-    # 追加（config_apodata.py 側に定義が必要）
-    META_SHEET, SOURCES
-)
-
 # ==== 固定設定 ====
 NUM_CALC_COLS = 12          # AM〜 の計算列数（入社年月まで）
 HTTP_TIMEOUT_SEC = 120
